@@ -1,10 +1,8 @@
 <div align="center">
     <h1>Projeto de Final de Módulo</h1>
     <h2>Resília, 3º Módulo</h2>
+    <img src="./readme_imgs/gotLogo.jpg">
 </div> 
-
-
-![](./readme_imgs/gotLogo.jpg)
 
 
 
