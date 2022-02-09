@@ -1,8 +1,14 @@
-![got](./imgs/gotLogo.jpg)
+<div align="center">
+    <h1>Projeto de Final de Módulo</h1>
+    <h2>Resília, 3º Módulo</h2>
+</div> 
 
-##                              Projeto de final de Módulo 
 
-### Resilia, 3º módulo 
+![](./imgs/gotLogo.jpg)
+
+
+
+
 
 #### Game of Thrones Dataset
 
@@ -50,7 +56,7 @@ No total, são 3 tabelas que nos fornecem os seguintes dados:
   * Duração
   * Diretor
 
-Exemplo: 
+Exemplo:  (Reduzido, senão fica muito grande, rs)
 
 | Temporada | Episódios | Título              | Data Lançamento | Notas | Votos |
 | --------- | --------- | ------------------- | --------------- | ----- | ----- |
@@ -73,6 +79,107 @@ Exemplo:
 
 
 
-### Diagrama 
+## Diagrama 
 
 Nós utilizamos o site [dbdiagram]([dbdiagram.io - Database Relationship Diagrams Design Tool](https://dbdiagram.io/home)) para criarmos uma visualização mais simples e relacional com os dados. Ao observarmos as tabelas de Game Of Thrones, não conseguimos estabelecer muitos relacionamentos (Chaves estrangeiras) entre elas. Somente observamos que poderia ser interessante relacionarmos o nome do Ator contido na tabela `personagens` com o nome dos atores principais contidos na tabela `episodios`
+
+![](./imgs/diagrama.jpg)
+
+
+
+## Queries e Gráficos
+
+<h3 align="center"> Quantidade de casas por Região <h3>
+
+```sql
+
+SELECT `REGIAO`,COUNT(*) AS TOTAL 
+FROM `CASAS` GROUP BY `REGIAO` 
+ORDER BY TOTAL DESC;
+```
+
+![](C:\Users\dsjai\Documents\Got Readme\imgs\Casas por região.png)
+
+
+
+
+
+<h3 align="center">Top 5 personagens principais <h3>
+
+```sql
+SELECT * FROM `PERSONAGENS` WHERE `EPISODIOS_QUE_APARECEU` > 50
+ORDER BY `EPISODIOS_QUE_APARECEU` DESC LIMIT 5;
+```
+
+![](C:\Users\dsjai\Documents\Got Readme\imgs\Episódios por personagem.png)
+
+
+
+<h3 align="center">Qual diretor dirigiu mais episódios</h3>
+
+
+
+
+
+```sql
+SELECT `DIRETOR`, COUNT(*) AS TOTAL  
+FROM `EPISODIOS` GROUP BY `DIRETOR` 
+ORDER BY TOTAL DESC;
+```
+
+![](C:\Users\dsjai\Documents\Got Readme\imgs\Episódios por Diretor.png)
+
+
+
+<h3 align="center"> Top 3 temporadas mais longas </h3>
+
+
+
+```sql
+SELECT `TEMPORADA` , sum(`DURACAO`)
+ AS `DURACAO DA TEMPORADA` 
+ FROM `EPISODIOS` 
+ GROUP BY `TEMPORADA` 
+ ORDER BY `DURACAO DA TEMPORADA` DESC LIMIT 3;
+```
+
+
+
+
+
+
+
+## Relatório do projeto
+
+#### Encontros, organização e ferramentas
+
+Esse projeto foi um ensinamento sobre a perseverança e a desistência! 
+
+Inicialmente escolhemos o tema Lego para trabalharmos em cima, e logo no inicio enfretamos muitos problemas com a importação das tabelas e gastamos um bom tempo nisso, muito tempo mesmo.
+
+Então decidimos depois de dias e noites mal dormidas tentando entender porque não dava certo, trocar de tema, então escolhemos trabalhar em cima do Super Mario Maker Dataset e tentamos e tentamos muito, e continuavamos enfrentando problema na importação da tabela, infelizmente.
+
+Então, caimos na real e percebemos que não dava pra gastar mais tempo tentando e ai, finalmente, decidimos ficar com Game Of Thrones, pois as tabelas eram pequenas e depois dessa decisão tudo fluiu perfeitamente (Deus, que arrependimento de não ter decidido antes haha).
+
+Durante esse processo de problemas infinitos, nós ficamos basicamente todos os dias em chamada pelo discord. Inicialmente nós queriamos usar o Trello e chegamos a montar as nossas atividades, tudo lá parecia perfeito para ser seguido e executado, porém como enfrentamos esses problemas logo na primeira etapa (importação dos arquivos csv) não conseguimos fluir o resto do trabalho e o trello acabou sendo esquecido. 
+
+Durante o desenvolvimento, nós nos reuniámos praticamente todos os dias e basicamente o dia inteiro, resolviamos juntos os problemas e progrediamos juntos, então nossa principal ferramenta de organização foi o Discord e o desespero. 
+
+Passado o sufoco, nos dividimos e uma parte ficou responsável pela criação das queries e a administração do github enquanto a outra focou na criação dos gráficos.
+
+
+
+* Ferramentas:
+
+  ![](C:\Users\dsjai\Documents\Got Readme\imgs\Ferramentas.png)
+
+
+
+
+
+
+
+
+
+
+
