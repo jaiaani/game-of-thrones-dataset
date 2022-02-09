@@ -83,7 +83,7 @@ Exemplo:
 
 Nós utilizamos o site [dbdiagram]([dbdiagram.io - Database Relationship Diagrams Design Tool](https://dbdiagram.io/home)) para criarmos uma visualização mais simples e relacional com os dados. Ao observarmos as tabelas de Game Of Thrones, não conseguimos estabelecer muitos relacionamentos (Chaves estrangeiras) entre elas. Somente observamos que poderia ser interessante relacionarmos o nome do Ator contido na tabela `personagens` com o nome dos atores principais contidos na tabela `episodios`
 
-![](./imgs/diagrama.jpg)
+![](./readme_imgs/diagrama.jpg)
 
 
 
@@ -98,7 +98,7 @@ FROM `CASAS` GROUP BY `REGIAO`
 ORDER BY TOTAL DESC;
 ```
 
-![](C:\Users\dsjai\Documents\Got Readme\imgs\Casas por região.png)
+![](./readme_imgs/Casas por região.png)
 
 
 
@@ -111,7 +111,7 @@ SELECT * FROM `PERSONAGENS` WHERE `EPISODIOS_QUE_APARECEU` > 50
 ORDER BY `EPISODIOS_QUE_APARECEU` DESC LIMIT 5;
 ```
 
-![](C:\Users\dsjai\Documents\Got Readme\imgs\Episódios por personagem.png)
+![](./readme_imgs/Episódios por personagem.png)
 
 
 
@@ -127,7 +127,7 @@ FROM `EPISODIOS` GROUP BY `DIRETOR`
 ORDER BY TOTAL DESC;
 ```
 
-![](C:\Users\dsjai\Documents\Got Readme\imgs\Episódios por Diretor.png)
+![](./readme_imgs/Episódios por Diretor.png)
 
 
 
@@ -171,7 +171,7 @@ Passado o sufoco, nos dividimos e uma parte ficou responsável pela criação da
 
 * Ferramentas:
 
-  ![](C:\Users\dsjai\Documents\Got Readme\imgs\Ferramentas.png)
+  ![](./readme_imgs/Ferramentas.png)
 
 
 
