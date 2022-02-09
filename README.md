@@ -89,7 +89,9 @@ Nós utilizamos o site [dbdiagram]([dbdiagram.io - Database Relationship Diagram
 
 ## Queries e Gráficos
 
-<h3 align="center"> Quantidade de casas por Região <h3>
+<h3 align="center"> Quantidade de casas por Região </h3>
+
+
 
 ```sql
 
@@ -104,7 +106,9 @@ ORDER BY TOTAL DESC;
 
 
 
-<h3 align="center">Top 5 personagens principais <h3>
+
+
+<h3 align="center">Top 5 personagens principais </h3>
 
 ```sql
 SELECT * FROM `PERSONAGENS` WHERE `EPISODIOS_QUE_APARECEU` > 50
@@ -171,7 +175,7 @@ Passado o sufoco, nos dividimos e uma parte ficou responsável pela criação da
 
 * Ferramentas:
 
-  ![](C:\Users\dsjai\Documents\Got Readme\imgs\Ferramentas.png)
+  ![](C:\Users\dsjai\Documents\Game Of Thrones\imgs\ferramentas.png)
 
 
 
