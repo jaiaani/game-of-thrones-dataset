@@ -89,7 +89,7 @@ Nós utilizamos o site [dbdiagram]([dbdiagram.io - Database Relationship Diagram
 
 ## Queries e Gráficos
 
-<h3 align="center"> Quantidade de casas por Região <h3>
+<h3 align="center"> Quantidade de casas por Região </h3>
 
 ```sql
 
