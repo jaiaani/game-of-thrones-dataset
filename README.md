@@ -4,7 +4,7 @@
 </div> 
 
 
-![](./imgs/gotLogo.jpg)
+![](./readme_imgs/gotLogo.jpg)
 
 
 
@@ -104,7 +104,8 @@ ORDER BY TOTAL DESC;
 
 
 
-<h3 align="center">Top 5 personagens principais <h3>
+<h3 align="center">Top 5 personagens principais </h3>
+
 
 ```sql
 SELECT * FROM `PERSONAGENS` WHERE `EPISODIOS_QUE_APARECEU` > 50
@@ -116,10 +117,6 @@ ORDER BY `EPISODIOS_QUE_APARECEU` DESC LIMIT 5;
 
 
 <h3 align="center">Qual diretor dirigiu mais episódios</h3>
-
-
-
-
 
 ```sql
 SELECT `DIRETOR`, COUNT(*) AS TOTAL  
@@ -133,8 +130,6 @@ ORDER BY TOTAL DESC;
 
 <h3 align="center"> Top 3 temporadas mais longas </h3>
 
-
-
 ```sql
 SELECT `TEMPORADA` , sum(`DURACAO`)
  AS `DURACAO DA TEMPORADA` 
@@ -142,8 +137,6 @@ SELECT `TEMPORADA` , sum(`DURACAO`)
  GROUP BY `TEMPORADA` 
  ORDER BY `DURACAO DA TEMPORADA` DESC LIMIT 3;
 ```
-
-
 
 
 
