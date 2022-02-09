@@ -162,7 +162,7 @@ Passado o sufoco, nos dividimos e uma parte ficou responsável pela criação da
 
 * Ferramentas:
 
-  ![](./readme_imgs/Ferramentas.png)
+  ![](./readme_imgs/ferramentas.png)
 
 
 
