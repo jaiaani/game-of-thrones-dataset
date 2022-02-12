@@ -130,7 +130,7 @@ SELECT `TEMPORADA` , sum(`DURACAO`)
  GROUP BY `TEMPORADA` 
  ORDER BY `DURACAO DA TEMPORADA` DESC LIMIT 3;
 ```
-![](./Graficos/tempLonga.png)
+![](./Graficos/tempLonga.PNG)
 
 
 
