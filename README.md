@@ -1,12 +1,19 @@
 <div align="center">
     <h1>Projeto de Final de Módulo</h1>
     <h2>Resília, 3º Módulo</h2>
+<<<<<<< HEAD
 </div> 
 
 
 ![](./imgs/gotLogo.jpg)
 
 
+=======
+    <img src="./readme_imgs/gotLogo.jpg">
+</div> 
+
+
+>>>>>>> 12cda2852d3d58b43661aff6c397c2adcc069c92
 
 
 
@@ -83,7 +90,11 @@ Exemplo:
 
 Nós utilizamos o site [dbdiagram]([dbdiagram.io - Database Relationship Diagrams Design Tool](https://dbdiagram.io/home)) para criarmos uma visualização mais simples e relacional com os dados. Ao observarmos as tabelas de Game Of Thrones, não conseguimos estabelecer muitos relacionamentos (Chaves estrangeiras) entre elas. Somente observamos que poderia ser interessante relacionarmos o nome do Ator contido na tabela `personagens` com o nome dos atores principais contidos na tabela `episodios`
 
+<<<<<<< HEAD
 ![](./imgs/diagrama.jpg)
+=======
+![](./readme_imgs/diagrama.jpg)
+>>>>>>> 12cda2852d3d58b43661aff6c397c2adcc069c92
 
 
 
@@ -98,28 +109,23 @@ FROM `CASAS` GROUP BY `REGIAO`
 ORDER BY TOTAL DESC;
 ```
 
-![](C:\Users\dsjai\Documents\Got Readme\imgs\Casas por região.png)
+![](./readme_imgs/Casas por região.png)
 
 
 
+<h3 align="center">Top 5 personagens principais </h3>
 
-
-<h3 align="center">Top 5 personagens principais <h3>
 
 ```sql
 SELECT * FROM `PERSONAGENS` WHERE `EPISODIOS_QUE_APARECEU` > 50
 ORDER BY `EPISODIOS_QUE_APARECEU` DESC LIMIT 5;
 ```
 
-![](C:\Users\dsjai\Documents\Got Readme\imgs\Episódios por personagem.png)
+![](./readme_imgs/Episódios por personagem.png)
 
 
 
 <h3 align="center">Qual diretor dirigiu mais episódios</h3>
-
-
-
-
 
 ```sql
 SELECT `DIRETOR`, COUNT(*) AS TOTAL  
@@ -127,13 +133,11 @@ FROM `EPISODIOS` GROUP BY `DIRETOR`
 ORDER BY TOTAL DESC;
 ```
 
-![](C:\Users\dsjai\Documents\Got Readme\imgs\Episódios por Diretor.png)
+![](./readme_imgs/Episódios por Diretor.png)
 
 
 
 <h3 align="center"> Top 3 temporadas mais longas </h3>
-
-
 
 ```sql
 SELECT `TEMPORADA` , sum(`DURACAO`)
@@ -142,8 +146,6 @@ SELECT `TEMPORADA` , sum(`DURACAO`)
  GROUP BY `TEMPORADA` 
  ORDER BY `DURACAO DA TEMPORADA` DESC LIMIT 3;
 ```
-
-
 
 
 
@@ -171,9 +173,24 @@ Passado o sufoco, nos dividimos e uma parte ficou responsável pela criação da
 
 * Ferramentas:
 
+<<<<<<< HEAD
   ![](C:\Users\dsjai\Documents\Got Readme\imgs\Ferramentas.png)
+=======
+  ![](./readme_imgs/ferramentas.png)
+>>>>>>> 12cda2852d3d58b43661aff6c397c2adcc069c92
 
 
+* Equipe
+
+    <table align="center">
+      <tr>
+      <td align="center"><img src="https://github.com/jaiaani.png"  width="100px;" alt=""><br><sub><b>Jaiane Guimarães</b></sub></a><br /><a href="https://github.com/jaiaani" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank">  <a href="http://linkedin.com/in/jaiane-guimaraes/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>  
+      <td align="center"><img src="https://github.com/ViniciusSTeixeira.png"  width="100px;" alt=""/><br /><sub><b>Vinicius Teixeira</b></sub></a><br /> <a href="https://github.com/ViniciusSTeixeira" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank">  <a href="http://linkedin.com/in/caiovieiralima//" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>  
+      <td align="center"><img src="https://github.com/VitorTui.png"  width="100px;" alt=""/><br /><sub><b>Vitor Silva</b></sub></a><br /> <a href="https://github.com/VitorTui" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank">  <a href="https://www.linkedin.com/in/vitorcorreadasilva/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>  
+      <td align="center"><img src="https://github.com/kaarolfelix.png"  width="100px;" alt=""/><br /><sub><b>Karolaine Felix</b></sub></a><br /><a href="https://github.com/kaarolfelix" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank">  <a href="https://www.linkedin.com/in/karolainefelix/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>  
+        </tr>
+      </table>
+     
 
 
 
