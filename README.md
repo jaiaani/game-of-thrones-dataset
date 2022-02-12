@@ -1,20 +1,8 @@
 <div align="center">
     <h1>Projeto de Final de Módulo</h1>
     <h2>Resília, 3º Módulo</h2>
-<<<<<<< HEAD
-</div> 
-
-
-![](./imgs/gotLogo.jpg)
-
-
-=======
     <img src="./readme_imgs/gotLogo.jpg">
 </div> 
-
-
->>>>>>> 12cda2852d3d58b43661aff6c397c2adcc069c92
-
 
 
 #### Game of Thrones Dataset
@@ -90,17 +78,13 @@ Exemplo:
 
 Nós utilizamos o site [dbdiagram]([dbdiagram.io - Database Relationship Diagrams Design Tool](https://dbdiagram.io/home)) para criarmos uma visualização mais simples e relacional com os dados. Ao observarmos as tabelas de Game Of Thrones, não conseguimos estabelecer muitos relacionamentos (Chaves estrangeiras) entre elas. Somente observamos que poderia ser interessante relacionarmos o nome do Ator contido na tabela `personagens` com o nome dos atores principais contidos na tabela `episodios`
 
-<<<<<<< HEAD
-![](./imgs/diagrama.jpg)
-=======
-![](./readme_imgs/diagrama.jpg)
->>>>>>> 12cda2852d3d58b43661aff6c397c2adcc069c92
 
+![](./readme_imgs/diagrama.jpg)
 
 
 ## Queries e Gráficos
 
-<h3 align="center"> Quantidade de casas por Região <h3>
+<h3 align="center"> Quantidade de casas por Região </h3>
 
 ```sql
 
@@ -109,7 +93,7 @@ FROM `CASAS` GROUP BY `REGIAO`
 ORDER BY TOTAL DESC;
 ```
 
-![](./readme_imgs/Casas por região.png)
+![](./Graficos/casaReg.png)
 
 
 
@@ -121,7 +105,7 @@ SELECT * FROM `PERSONAGENS` WHERE `EPISODIOS_QUE_APARECEU` > 50
 ORDER BY `EPISODIOS_QUE_APARECEU` DESC LIMIT 5;
 ```
 
-![](./readme_imgs/Episódios por personagem.png)
+![](./Graficos/epPers.png)
 
 
 
@@ -133,7 +117,7 @@ FROM `EPISODIOS` GROUP BY `DIRETOR`
 ORDER BY TOTAL DESC;
 ```
 
-![](./readme_imgs/Episódios por Diretor.png)
+![](./Graficos/qntEpDir.png)
 
 
 
@@ -173,11 +157,7 @@ Passado o sufoco, nos dividimos e uma parte ficou responsável pela criação da
 
 * Ferramentas:
 
-<<<<<<< HEAD
-  ![](C:\Users\dsjai\Documents\Got Readme\imgs\Ferramentas.png)
-=======
   ![](./readme_imgs/ferramentas.png)
->>>>>>> 12cda2852d3d58b43661aff6c397c2adcc069c92
 
 
 * Equipe
